@@ -22,9 +22,13 @@ gem install scss-lint
 
 ### Installation
 
+Install node modules:
+
 ```
 npm install
 ```
+
+Compile app and run on local server:
 
 ```
 grunt
