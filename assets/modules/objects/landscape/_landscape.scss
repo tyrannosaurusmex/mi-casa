@@ -8,7 +8,11 @@
     overflow: hidden;
 
     &_wrapper {
-        min-width: 1200px;
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        min-height: 600px;
+        overflow: hidden;
     }
 
     &_hola {
@@ -30,7 +34,7 @@
     }
 
     &_title {
-        font-family: 'The Beach';
+        font-family: 'The-Beach';
         line-height: 1;
         font-size: 4em;
         margin: 0.25em 0;
@@ -50,8 +54,11 @@
     }
 
     &_layers {
-        position: relative;
-        padding-top: 70.5%;
+        position: absolute;
+        min-width: 850px;
+        bottom: -6%;
+        width: 100%;
+        height: 100%;
     }
 
     &_layer {

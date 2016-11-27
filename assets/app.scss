@@ -3,12 +3,13 @@ $asset-path: '../..' !default;
 
 $bgColor: #400e00;
 $brand1: #ef4738;
+$white: #ffffff;
 $grey3: #292929;
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 
 @font-face {
-    font-family: 'The Beach';
+    font-family: 'The-Beach';
     src: url('#{$asset-path}/fonts/The-Beach.oft');
 }
 
@@ -35,7 +36,7 @@ pre, hr,
     background-color: $bgColor;
     padding-top: 6em;
     min-height: 500px;
-    color: white;
+    color: $white;
 }
 
 .container {
