@@ -2,10 +2,20 @@
 $asset-path: '../..' !default;
 
 $bgColor: #400e00;
+$brand1: #ef4738;
+$grey3: #292929;
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+@font-face {
+    font-family: 'The Beach';
+    src: url('#{$asset-path}/fonts/The-Beach.oft');
+}
 
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 .mainContent {
@@ -13,4 +23,4 @@ html, body {
     min-height: 500px;
 }
 
-@import 'modules/objects/parallax-background/parallax-background';
+@import 'modules/objects/landscape/landscape';

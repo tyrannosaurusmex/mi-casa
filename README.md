@@ -1,4 +1,4 @@
-# T-Mex - Mi Cassa
+# T-Mex - Mi Casa
 
 ### Requirements
 

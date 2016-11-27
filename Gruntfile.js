@@ -40,6 +40,7 @@ module.exports = function(grunt) {
     var project = {
         dist:[         'dist/', {
             images:    'dist/images/',
+            fonts:     'dist/fonts/',
             scripts:   'dist/scripts/',
             styles:    'dist/styles/',
             themes:[   'dist/themes/', {
@@ -49,6 +50,7 @@ module.exports = function(grunt) {
         }],
         source:[       'assets/', {
             images:    'assets/images/',
+            fonts:    'assets/fonts/',
             scripts:   'assets/modules/',
             styles:    'assets/modules/',
             themes:[   'assets/themes/', {
@@ -183,6 +185,14 @@ module.exports = function(grunt) {
                     cwd: project.source[1].images,
                     src: '**/*',
                     dest: project.dist[1].images,
+                    expand: true
+                }]
+            },
+            fonts: {
+                files: [{
+                    cwd: project.source[1].fonts,
+                    src: '**/*',
+                    dest: project.dist[1].fonts,
                     expand: true
                 }]
             }
@@ -447,7 +457,7 @@ module.exports = function(grunt) {
                     'sass:' + env,
                     'postcss:dist',
                     'csscomb',
-                    //'scsslint',
+                    'scsslint',
                     'mochacli:scss',
                     'sassdoc',
                     'notify:css'
@@ -466,7 +476,8 @@ module.exports = function(grunt) {
                 files: project.source[1].images + '**/*',
                 tasks: [
                     'clean:images',
-                    'copy:images'
+                    'copy:images',
+                    'notify:images'
                 ]
             },
             templates: {
@@ -493,6 +504,12 @@ module.exports = function(grunt) {
                 options: {
                     title: 'Styles Compiled',
                     message: 'All styles have been successfully compiled!'
+                }
+            },
+            images: {
+                options: {
+                    title: 'Image Copied',
+                    message: 'All images have been copied to the distribution directory'
                 }
             },
             templates: {
@@ -549,6 +566,7 @@ module.exports = function(grunt) {
             'replace:sassTheme',
             'copy:dist',
             'copy:images',
+            'copy:fonts',
             'concat',
             'sass:' + environment,
             'postcss',
