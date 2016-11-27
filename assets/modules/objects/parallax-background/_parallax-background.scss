@@ -1,0 +1,63 @@
+.parallaxBackground {
+
+    $image-path: '#{$asset-path}/images/parallax-background';
+
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+    padding-top: 70.5%;
+    background-size: 100%;
+
+    &_layer {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    &_layer1 {
+        background-image: url('#{$image-path}/layer1.svg');
+        background-attachment: fixed;
+    }
+
+    &_layer2 {
+        background-image: url('#{$image-path}/layer2.svg');
+        background-position-y: 58.1%;
+    }
+
+    &_layer3 {
+        background-image: url('#{$image-path}/layer3.svg');
+        background-position-y: 72%;
+    }
+
+    &_layer4 {
+        background-image: url('#{$image-path}/layer4.svg');
+        background-position-y: 68%;
+    }
+
+    &_layer5 {
+        background-image: url('#{$image-path}/layer5.svg');
+        background-position-x: 100%;
+        background-position-y: 78%;
+        background-size: 59%;
+    }
+
+    &_layer6 {
+        background-image: url('#{$image-path}/layer6.svg');
+        background-position-y: 75%;
+    }
+
+    &_layer7 {
+        background-image: url('#{$image-path}/layer7.svg');
+        background-position-y: 91%;
+    }
+
+    &_layer8 {
+        background-image: url('#{$image-path}/layer8.svg');
+        background-position-y: 100%;
+    }
+
+}

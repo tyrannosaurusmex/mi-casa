@@ -1,0 +1,23 @@
+---
+layout: core.hbs
+---
+
+{{#if billboard}}
+    {{> billboard}}
+{{/if}}
+
+<main id="{{contentID}}">
+    {{#if container}}
+        <div class="container">
+    {{/if}}
+
+    {{#if breadcrumb}}
+        {{> breadcrumb}}
+    {{/if}}
+
+    {{> body}}
+
+    {{#if container}}
+        </div>
+    {{/if}}
+</main>

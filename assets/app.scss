@@ -1,0 +1,16 @@
+// Asset Path
+$asset-path: '../..' !default;
+
+$bgColor: #400e00;
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.mainContent {
+    background-color: $bgColor;
+    min-height: 500px;
+}
+
+@import 'modules/objects/parallax-background/parallax-background';
