@@ -508,7 +508,7 @@ module.exports = function(grunt) {
             },
             images: {
                 options: {
-                    title: 'Image Copied',
+                    title: 'Images Copied',
                     message: 'All images have been copied to the distribution directory'
                 }
             },

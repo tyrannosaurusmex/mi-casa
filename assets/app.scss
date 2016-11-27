@@ -18,9 +18,31 @@ html, body {
     font-family: 'Raleway', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, 
+p, ul, ol, 
+form, fieldset, legend, figure, table, 
+pre, hr,
+.object {
+    &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
 .mainContent {
     background-color: $bgColor;
+    padding-top: 6em;
     min-height: 500px;
+    color: white;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 @import 'modules/objects/landscape/landscape';
