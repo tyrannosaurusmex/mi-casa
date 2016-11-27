@@ -1,1 +1,3 @@
 $.stellar();
+
+$('.landscape').landscape();

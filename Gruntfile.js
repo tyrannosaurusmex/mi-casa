@@ -610,7 +610,7 @@ module.exports = function(grunt) {
         
     // Lint
     grunt.registerTask('lint', [
-        //'scsslint',
+        'scsslint',
         'jshint'
     ]);
         
