@@ -50,7 +50,7 @@ module.exports = function(grunt) {
         }],
         source:[       'assets/', {
             images:    'assets/images/',
-            fonts:    'assets/fonts/',
+            fonts:     'assets/fonts/',
             scripts:   'assets/modules/',
             styles:    'assets/modules/',
             themes:[   'assets/themes/', {
