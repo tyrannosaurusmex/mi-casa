@@ -8,16 +8,15 @@
     overflow: hidden;
 
     &_wrapper {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        height: 100vh;
     }
 
     &_layers {
-        position: absolute;
+        position: relative;
+        overflow: hidden;
         width: 100%;
-        height: 100%;
+        height: 110vmin;
+        min-width: 150vmin;
+        min-height: 50vmax;
     }
 
     &_layer {
