@@ -3,13 +3,20 @@ $asset-path: '../..' !default;
 
 $bgColor: #400e00;
 $brand1: #ef4738;
+$white: #ffffff;
 $grey3: #292929;
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 
 @font-face {
     font-family: 'The Beach';
-    src: url('#{$asset-path}/fonts/The-Beach.oft');
+    src: url('#{$asset-path}/fonts/TheBeach.eot');
+    src: url('#{$asset-path}/fonts/TheBeach.eot?#iefix') format('embedded-opentype'),
+         url('#{$asset-path}/fonts/TheBeach.woff') format('woff'),
+         url('#{$asset-path}/fonts/TheBeach.ttf') format('truetype'),
+         url('#{$asset-path}/fonts/TheBeach.svg#TheBeach') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 html, body {
@@ -35,7 +42,7 @@ pre, hr,
     background-color: $bgColor;
     padding-top: 6em;
     min-height: 500px;
-    color: white;
+    color: $white;
 }
 
 .container {
