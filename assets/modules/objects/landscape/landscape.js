@@ -23,7 +23,7 @@
             $(window).on('scroll', function() {
                 var scrollTop = $(this).scrollTop();
                 $(options.opaqueOnScroll).css({
-                    'opacity' : 1 - scrollTop/900
+                    'opacity': 1 - scrollTop/960
                 }); 
             });
         }
