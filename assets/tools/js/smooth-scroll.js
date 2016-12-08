@@ -1,12 +1,9 @@
 (function ($) {
     
     /**
-     *
-     * Kayzen.smoothScroll
+     * smoothScroll
      * @author @esr360
-     *
      */
- 
     $.fn.smoothScroll = function(custom) {
         
         // Options

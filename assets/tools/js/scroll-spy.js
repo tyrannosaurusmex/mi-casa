@@ -1,13 +1,9 @@
 (function ($) {
     
     /**
-     * 
-     * KAYZEN
-     * Kayzen.scrollSpy
+     * crollSpy
      * @author: @esr360
-     * 
      */
- 
     $.fn.scrollSpy = function(custom) {
         
         // Options
