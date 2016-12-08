@@ -3,7 +3,7 @@ $.stellar();
 $('a[href*="#"]:not([href*="modal"])').smoothScroll();
 
 $('.mainNav').scrollSpy({
-    itemSelector : 'a'
+    itemSelector : 'li'
 });
 
 $('.landscape').landscape();

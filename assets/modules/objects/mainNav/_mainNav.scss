@@ -12,12 +12,19 @@
 
     li {
         display: inline-block;
+        &:hover {
+            a {
+                background: rgba($white, 0.1);
+            }
+        }
     }
 
     a {
         padding: 0.5em 0.85em;
         color: $white;
         text-decoration: none;
+        border: 1px solid transparent;
+        transition: 0.4s;
         &.active {
             background: $brand1;
         }
