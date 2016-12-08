@@ -1,0 +1,33 @@
+.header {
+
+    background: $grey3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+
+    &-hide {
+        display: none;
+    }
+
+    &_wrapper {
+        display: table;
+        width: 100%;
+    }
+
+    &_logo {
+        display: table-cell;
+        vertical-align: middle;
+        font-family: 'The Beach';
+        line-height: 1;
+        font-size: 1.5em;
+        padding-left: 5%;
+        color: $brand1;
+        position: relative;
+        transform: translateY(0.15em);
+        span {
+            color: $white;
+        }
+    }
+
+}
